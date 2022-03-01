@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --primary-color: #ff6060;
 }
 
 code {
@@ -20,4 +21,14 @@ code {
 
 .App {
   min-height: 100vh;
+}
+
+a {
+  /*color: var(--text-a);*/
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+
 }
