@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
 import Logo from "../../assets/logo.png";
 import { NavLink } from 'react-router-dom';
-
+import styles from "./Header.module.scss";
 export default class Header extends Component {
 
     render() {
         return (
             <header>
-                <img className="logo" src={Logo} alt="Logo Kasa" />
+                 <div>
+                     <img className="logo" src={Logo} alt="Logo Kasa" />
+
+
                 <ul>
                     <li>
-                        <NavLink className="nav-links" to="/">
+                        <NavLink to="/" className={styles.nav_link}  >
                             Accueil
                         </NavLink>
+                        
                     </li>
-                    <li className="nav-item">
-                        <NavLink to="/about" className="nav-links">
+                    <li>
+                        <NavLink to="/about" className={styles.nav_link } >
                             A propos
                         </NavLink>
                     </li>
                 </ul>
+                 </div>
             </header>
         );
     }

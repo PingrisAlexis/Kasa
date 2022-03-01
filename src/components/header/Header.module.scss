@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0rem 3rem 0rem ;
+  div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 80vw;
+    img {
+      width: 12rem;
+      object-fit: contain;
+    }
+    ul{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 15rem;
+      margin-top: 1.2rem;
+      .nav_link {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+
+
+  }
+.active_nav_link {
+  background-color: black;
+}
