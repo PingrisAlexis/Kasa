@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, LodgingList, Lodging } from './components';
+import { Header, LodgingList, Banner } from './components';
 import { BrowserRouter as Router, Route, Switch, Redirect, Routes } from 'react-router-dom';
 
 class App extends Component {
@@ -10,9 +10,10 @@ class App extends Component {
         <Router>
             <div className="App">
                 <Header />
+                <Banner />
                 <Routes>
                     <Route path="/" element={<LodgingList />} />
-                    <Route path="/Lodging/id" element={<Lodging />} />
+                    {/*<Route path="/Lodging/id" element={<Lodging />} />*/}
                 </Routes>
             </div>
         </Router>

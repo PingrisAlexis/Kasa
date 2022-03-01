@@ -1,0 +1,28 @@
+.banner_contenair {
+ display: flex;
+ justify-content: center;
+ div {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 2rem;
+  height: 13rem;
+  width: 80vw;
+
+  img {
+   height: 100%;
+   width: 100%;
+   border-radius: 2rem;
+   object-fit:cover;
+   opacity: 0.67;
+  }
+  p {
+   font-size: 3rem;
+   color: white;
+   position: absolute;
+   top: 27%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   word-break: break-word;
+  }
+ }
+
+}
