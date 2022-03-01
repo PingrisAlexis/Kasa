@@ -11,7 +11,6 @@ export default class LodgingList extends Component {
     }
 
     render() {
-        const { data } = this.state;
         return (
             <div>
                 {data.map((item) => {
