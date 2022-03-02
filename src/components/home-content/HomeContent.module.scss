@@ -1,0 +1,14 @@
+.lodgings_contenair {
+  display: flex;
+  justify-content: center;
+  .lodgings_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 75vw;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    background-color: var(--secondary-color);
+    padding: 3rem 0;
+  }
+}
