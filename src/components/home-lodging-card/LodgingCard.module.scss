@@ -1,0 +1,22 @@
+.lodging_card {
+  margin: 2rem;
+  word-break: break-word;
+  img, div, a {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 1rem;
+    word-break: break-word;
+  }
+  img {
+    object-fit: cover;
+  }
+  h2 {
+    position: relative;
+    bottom: 6rem;
+    left: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    word-break: break-word;
+  }
+}
