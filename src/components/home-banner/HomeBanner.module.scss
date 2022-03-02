@@ -1,0 +1,26 @@
+.home_banner_contenair {
+ display: flex;
+ justify-content: center;
+ article {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 2rem;
+  height: 20rem;
+  width: 75vw;
+  img {
+   height: 100%;
+   width: 100%;
+   border-radius: 2rem;
+   object-fit:cover;
+   opacity: 0.67;
+  }
+  h1 {
+   font-size: 5rem;
+   color: white;
+   position: absolute;
+   top: 27%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   word-break: break-word;
+  }
+ }
+}
