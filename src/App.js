@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
-import { Header, LodgingList, Banner } from './components';
-import { BrowserRouter as Router, Route, Switch, Redirect, Routes } from 'react-router-dom';
+import { Header, Footer, NotFound } from './components';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HomePage, AboutPage } from './views';
 
 class App extends Component {
-
     render() {
         return (
-
-        <Router>
-            <div className="App">
-                <Header />
-                <Banner />
-                <Routes>
-                    <Route path="/" element={<LodgingList />} />
-                    {/*<Route path="/Lodging/id" element={<Lodging />} />*/}
-                </Routes>
-            </div>
-        </Router>
+            <Router>
+                <div className="App">
+                    <Header />
+                    <Routes>
+                        <Route path="*" element={<NotFound />} />
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/about" element={<AboutPage />} />
+                    </Routes>
+                    <Footer />
+                </div>
+            </Router>
         );
     }
 }
