@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { LodgingContent } from '../../components';
+import { LodgingContent} from '../../components';
 
-export default class HomePage extends Component {
+export default class LodgingPage extends Component {
     constructor() {
         super();
     }
