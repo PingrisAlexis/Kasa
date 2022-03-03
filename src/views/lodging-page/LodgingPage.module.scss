@@ -1,0 +1,14 @@
+.lodging_container {
+  width: 100vw;
+  h1{
+    color: var(--primary-color);
+  }
+}
+.accordion_width {
+  width: 37.5vw;
+}
+
+.accordions_container {
+  display: flex;
+  flex-flow: row wrap;
+}
