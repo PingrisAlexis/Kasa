@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { BiChevronUp } from 'react-icons/bi'
-import { BiChevronDown } from 'react-icons/bi'
+import { BiChevronUp, BiChevronDown } from 'react-icons/bi'
 import styles from "./Accordion.module.scss";
 
 export default class Accordion extends  Component {
@@ -14,18 +13,22 @@ export default class Accordion extends  Component {
     }
 
     render() {
-        const {title, description} = this.props
+        const {title, content, accordionWidth} = this.props
         const AccordionIsOpen = this.state.AccordionIsOpen;
 
         return (
-            <div className={styles.accordion_container}>
+            <div className={[styles.accordion_container, accordionWidth].join(' ')}>
                 <div className={styles.accordion_title_block} onClick={this.toggleAccordionClick}>
                     <span>{title}</span>
                     {AccordionIsOpen ? <BiChevronUp className={styles.accordion_BiChevron}/> : <BiChevronDown className={styles.accordion_BiChevron}/> }
                 </div>
-                <div className={styles.accordion_description_block}>
-                    {AccordionIsOpen ? <span>{description}</span> : null }
-                </div>
+                {AccordionIsOpen ? <div className={styles.accordion_description_block}>
+                    {typeof (content) === "string" ? <span>{content}</span> :
+                        content.map((elt, index) =>
+                            <li key={index}>{elt}</li>
+                        )
+                    }
+                </div> : null}
             </div>
         )
     }
