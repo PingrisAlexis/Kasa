@@ -11,14 +11,12 @@ export default class Header extends Component {
                      <img className="logo" src={Logo} alt="Logo Kasa" />
                     <ul>
                         <li>
-                            <NavLink to="/" className={({ isActive }) =>
-                                isActive ? styles.active_nav_link : styles.nav_link}>
+                            <NavLink to="/" exact className={styles.nav_link} activeClassName={styles.active_nav_link}>
                                 Accueil
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about"  className={({ isActive }) =>
-                                isActive ? styles.active_nav_link : styles.nav_link}>
+                            <NavLink to="/about"  className={styles.nav_link} activeClassName={styles.active_nav_link}>
                                 A Propos
                             </NavLink>
                         </li>
