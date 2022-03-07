@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from "./Tag.module.scss";
 
-export default class Accordion extends  Component {
+export default class Tag extends  Component {
     render() {
         const {tags} = this.props
         return (
