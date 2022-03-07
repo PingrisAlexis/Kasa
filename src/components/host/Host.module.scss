@@ -1,0 +1,27 @@
+.host_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    font-size: 2rem;
+    align-self: center;
+    padding-right: 1rem;
+  }
+  img {
+    height: 6rem;
+    border-radius: 3rem ;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .host_container {
+    width: 50% !important;
+    figcaption {
+      font-size: 1.6rem !important;
+    }
+  }
+}
