@@ -1,0 +1,50 @@
+.gallery_container {
+  position: relative;
+
+  width: 75vw;
+  text-align: center;
+  @media screen and (max-width: 992px) {
+    width: 90vw!important;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 30rem;
+    border-radius: 0.5rem;
+  }
+  .arrows_container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .arrow {
+      bottom: 18rem;
+      cursor: pointer;
+      font-size: 8rem;
+      .left {
+         left: 2%;
+      .right {
+        color: red;
+
+        right: 2%;
+      }
+      @media screen and (max-width: 992px) {
+        //font-size: 3rem;
+        //bottom: 17rem;
+      }
+    }
+  }
+  }
+  .gallery_counter {
+    bottom : 5rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: lighter;
+  }
+  .arrow,
+  .gallery_counter {
+    position: relative;
+    color: white;
+    font-weight: lighter;
+  }
+}
