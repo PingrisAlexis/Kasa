@@ -13,7 +13,7 @@ export default class Accordion extends  Component {
     }
 
     render() {
-        const {title, content, accordionWidth} = this.props
+        const {title, content, accordionWidth} = this.props;
         const AccordionIsOpen = this.state.AccordionIsOpen;
 
         return (

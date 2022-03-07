@@ -6,6 +6,9 @@
     border-radius: 2rem;
     height: 20rem;
     width: 75vw;
+    @media screen and (max-width: 992px) {
+      width: 90vw!important;
+    }
     img {
       height: 100%;
       width: 100%;
@@ -15,3 +18,4 @@
     }
   }
 }
+
