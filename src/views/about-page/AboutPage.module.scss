@@ -7,4 +7,11 @@
 
 .accordion_width {
   width: 60vw;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .accordion_width{
+    width: 90vw;
+  }
 }

@@ -6,6 +6,10 @@
     height: 35rem;
     border-radius: 1rem;
     word-break: break-word;
+    @media screen and (max-width: 400px) {
+      width: 30rem !important;
+      height: 30rem !important;
+    }
   }
   img {
     object-fit: cover;

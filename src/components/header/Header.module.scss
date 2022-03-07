@@ -26,4 +26,21 @@ header {
       }
     }
   }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+      div {
+        width: 90vw !important;
+      img {
+        width: 15rem !important;
+      }
+      ul {
+        width: 15rem !important;
+      }
+      .nav_link {
+        font-size: 1.6rem !important;
+      }
+    }
   }
+}
