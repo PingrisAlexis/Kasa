@@ -1,14 +1,86 @@
 .lodging_container {
-  width: 100vw;
-  h1{
-    color: var(--primary-color);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 7rem;
+  .lodging_info {
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    margin-top: 2rem;
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+      :nth-child(3){
+        align-self: flex-start;
+        margin-right: 2rem;
+      }
+      h1, p{
+        color: var(--primary-color);
+        font-weight: lighter;
+      }
+      h1 {
+        font-size: 3.5rem;
+
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .gallery {
+    height: 35rem;
+    width: 75vw;
+    object-fit: cover;
   }
 }
+
 .accordion_width {
-  width: 37.5vw;
+  width: 35vw;
 }
 
 .accordions_container {
   display: flex;
   flex-flow: row wrap;
+  width: 75vw;
+  justify-content: space-between;
+}
+
+.host_tag_container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  align-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+  article {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+    p {
+      font-size: 1.8rem !important;
+    }
+  }
+  .accordions_container {
+    flex-flow: column !important;
+    align-items: center !important;
+    .accordion_width {
+      width: 90vw!important;
+    }
+  }
+  .lodging_info {
+    flex-flow: column nowrap !important;
+    width: 90vw !important;
+  }
+  .host_tag_container {
+    width: 100%;
+    flex-flow: row-reverse wrap!important;
+    justify-content: space-between;
+  }
 }

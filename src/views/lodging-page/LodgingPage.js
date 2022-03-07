@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Tag, Accordion} from '../../components';
+import { Tag, Accordion, Host, Rating, Gallery, NotFound } from '../../components';
 import { data } from '../../datas/data';
 import styles from "./LodgingPage.module.scss";
 
@@ -18,17 +18,25 @@ export default class LodgingPage extends Component {
       return selectedLodging[0]
     }
     render() {
+        if (this.props.location.state === undefined)
+            return <NotFound />;
 
         return (
-            <main>
+            <main className={styles.lodging_container}>
+                <Gallery pictures={this.state.selectedLodging.pictures}/>
 
-                <article className={styles.lodging_container}>
-                    <img src={this.state.selectedLodging.cover} alt="" />
-                    <h1>{this.state.selectedLodging.title}</h1>
-                    <p>{this.state.selectedLodging.description}</p>
-                </article>
-                
-                <Tag tags={this.state.selectedLodging.tags}/>
+                <div className={styles.lodging_info}>
+                    <article>
+                        <h1>{this.state.selectedLodging.title}</h1>
+                        <p>{this.state.selectedLodging.location}</p>
+                        <Tag tags={this.state.selectedLodging.tags}/>
+                    </article>
+
+                    <div className={styles.host_tag_container}>
+                        <Host name={this.state.selectedLodging.host.name} picture={this.state.selectedLodging.host.picture} />
+                        <Rating rating={this.state.selectedLodging.rating} />
+                    </div>
+                </div>
 
                 <div className={styles.accordions_container}>
                     <Accordion accordionWidth={styles.accordion_width} title={"Description"} content={this.state.selectedLodging.description} />
