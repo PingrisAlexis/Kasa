@@ -6,3 +6,6 @@ export { default as Footer } from './footer/Footer';
 export { default as NotFound } from './not-found/NotFound';
 export { default as Accordion } from './accordion/Accordion';
 export { default as Tag } from './tag/Tag';
+export { default as Host } from './host/Host';
+export { default as Rating } from './rating/Rating';
+export { default as Gallery } from './gallery/Gallery';
