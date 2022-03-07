@@ -10,7 +10,7 @@ export default class Host extends  Component {
                     <p>{name.split(" ")[0]}</p>
                     <p>{name.split(" ")[1]}</p>
                 </figcaption>
-                <img src={picture} alt={`${name}'s picture`}/>
+                <img src={picture} alt=""/>
             </figure>
         )
     }
