@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tag, Accordion, Host, Rating, Gallery, NotFound } from '../../components';
+import { Tag, Collapse, Host, Rating, Gallery, NotFound } from '../../components';
 import { data } from '../../datas/data';
 import styles from "./LodgingPage.module.scss";
 
@@ -38,9 +38,9 @@ export default class LodgingPage extends Component {
                     </div>
                 </div>
 
-                <div className={styles.accordions_container}>
-                    <Accordion accordionWidth={styles.accordion_width} title={"Description"} content={this.state.selectedLodging.description} />
-                    <Accordion accordionWidth={styles.accordion_width} title={"Equipements"} content={this.state.selectedLodging.equipments} />
+                <div className={styles.collapses_container}>
+                    <Collapse accordionWidth={styles.collapse_width} title={"Description"} content={this.state.selectedLodging.description} />
+                    <Collapse accordionWidth={styles.collapse_width} title={"Équipements"} content={this.state.selectedLodging.equipments} />
                 </div>
                 
             </main>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {AboutBanner, Accordion} from '../../components';
+import {AboutBanner, Collapse} from '../../components';
 import styles from "./AboutPage.module.scss";
 import {aboutData} from "../../datas/aboutData";
 
@@ -14,10 +14,10 @@ export default class AboutPage extends Component {
         return (
                 <main>
                     <AboutBanner />
-                    <div className={styles.accordions_container}>
+                    <div className={styles.collapses_container}>
                         {this.state.aboutMessages.map((aboutMessage) => {
                             return (
-                                <Accordion key={aboutMessage.id} accordionWidth={styles.accordion_width} title={aboutMessage.title} content={aboutMessage.description} />
+                                <Collapse key={aboutMessage.id} accordionWidth={styles.collapse_width} title={aboutMessage.title} content={aboutMessage.description} />
                             );
                         })}
                     </div>
