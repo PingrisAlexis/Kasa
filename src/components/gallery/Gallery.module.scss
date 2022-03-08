@@ -1,10 +1,9 @@
 .gallery_container {
   position: relative;
-
   width: 75vw;
   text-align: center;
   @media screen and (max-width: 992px) {
-    width: 90vw!important;
+    width: 90vw;
   }
   img {
     width: 100%;
@@ -21,16 +20,16 @@
       bottom: 18rem;
       cursor: pointer;
       font-size: 8rem;
+      @media screen and (max-width: 992px) {
+        font-size: 5rem;
+        bottom: 17rem;
+      }
       .left {
          left: 2%;
       .right {
         color: red;
 
         right: 2%;
-      }
-      @media screen and (max-width: 992px) {
-        //font-size: 3rem;
-        //bottom: 17rem;
       }
     }
   }

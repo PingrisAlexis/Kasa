@@ -6,6 +6,9 @@
   border-radius: 2rem;
   height: 20rem;
   width: 75vw;
+  @media screen and (max-width: 992px) {
+   width: 90vw;
+  }
   img {
    height: 100%;
    width: 100%;
@@ -23,18 +26,9 @@
    transform: translate(-50%, -50%);
    word-break: break-word;
    text-align: center;
-
-  }
- }
-}
-
-@media screen and (max-width: 992px) {
- .home_banner_contenair {
-  article  {
-  width: 90vw;
-   h1 {
-    font-size: 3rem !important;
-    text-align: left !important;
+   @media screen and (max-width: 992px) {
+    font-size: 3rem;
+    text-align: left;
    }
   }
  }

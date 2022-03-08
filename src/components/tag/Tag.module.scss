@@ -5,6 +5,10 @@
   justify-content: flex-start;
   position: relative;
   right: 1.5rem;
+  @media screen and (max-width: 992px) {
+    font-size: 1.2rem;
+    right: 0.8rem !important;
+  }
   li {
     border-radius: 1rem;
     text-align: center;
@@ -15,17 +19,10 @@
     height: 2.5rem;
     color: white;
     cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .tags_container {
-    font-size: 1.2rem;
-    right: 0.8rem !important;
-    li {
-      margin: 0.8rem!important ;
-      height: 2rem !important;
-      padding-top: 0.3rem !important;
+    @media screen and (max-width: 992px) {
+      margin: 0.8rem;
+      height: 2rem;
+      padding-top: 0.3rem;
     }
   }
 }

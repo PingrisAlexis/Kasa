@@ -10,11 +10,8 @@
     border-radius: 2rem;
     background-color: var(--secondary-color);
     padding: 3rem 0;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .lodgings_list {
-    background-color: white !important;
+    @media screen and (max-width: 992px) {
+      background-color: white;
+    }
   }
 }

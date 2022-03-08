@@ -3,6 +3,9 @@
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
+  @media screen and (max-width: 992px) {
+    width: 50%;
+  }
   figcaption {
     display: flex;
     flex-direction: column;
@@ -10,18 +13,12 @@
     font-size: 2rem;
     align-self: center;
     padding-right: 1rem;
+    @media screen and (max-width: 992px) {
+      font-size: 1.6rem;
+    }
   }
   img {
     height: 6rem;
     border-radius: 3rem ;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .host_container {
-    width: 50% !important;
-    figcaption {
-      font-size: 1.6rem !important;
-    }
   }
 }
