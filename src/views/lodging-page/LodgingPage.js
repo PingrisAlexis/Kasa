@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Tag, Collapse, Host, Rating, Gallery, NotFound } from '../../components';
+import { Tag, Collapse, Host, Rating, Gallery } from '../../components';
 import { data } from '../../datas/data';
 import styles from "./LodgingPage.module.scss";
+import {Redirect} from "react-router-dom";
+
 
 export default class LodgingPage extends Component {
     constructor(props) {
@@ -19,7 +21,7 @@ export default class LodgingPage extends Component {
     }
     render() {
         if (this.props.location.state === undefined)
-            return <NotFound />;
+            return <Redirect to="/not-found" />;
 
         return (
             <main className={styles.lodging_container}>
@@ -38,9 +40,9 @@ export default class LodgingPage extends Component {
                     </div>
                 </div>
 
-                <div className={styles.collapses_container}>
-                    <Collapse accordionWidth={styles.collapse_width} title={"Description"} content={this.state.selectedLodging.description} />
-                    <Collapse accordionWidth={styles.collapse_width} title={"Équipements"} content={this.state.selectedLodging.equipments} />
+                <div className={styles.lodging_collapses_container}>
+                    <Collapse title={"Description"} content={this.state.selectedLodging.description} />
+                    <Collapse title={"Équipements"} content={this.state.selectedLodging.equipments} />
                 </div>
                 
             </main>

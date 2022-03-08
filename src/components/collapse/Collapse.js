@@ -13,11 +13,11 @@ export default class Collapse extends  Component {
     }
 
     render() {
-        const {title, content, accordionWidth} = this.props;
+        const {title, content} = this.props;
         const collapseIsOpen = this.state.collapseIsOpen;
 
         return (
-            <div className={[styles.collapse_container, accordionWidth].join(' ')}>
+            <div className={[styles.collapse_container].join(' ')}>
                 <div className={styles.collapse_title_block} onClick={this.toggleCollapseClick}>
                     <span>{title}</span>
                     {collapseIsOpen ? <BiChevronUp className={styles.collapse_BiChevron}/> : <BiChevronDown className={styles.collapse_BiChevron}/> }
