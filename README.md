@@ -32,8 +32,12 @@
 
 - Creating components with React.
 
-- ### Set up:
+### Set up:
+
+- Clone the project, then :
 
 - `npm install`
 
 - `npm start`
+
+- The server listens on the port 3000: http://localhost:3000
