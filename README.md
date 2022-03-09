@@ -31,3 +31,9 @@
 - Initialize a web application with a framework.
 
 - Creating components with React.
+
+- ### Set up:
+
+- `npm install`
+
+- `npm start`
