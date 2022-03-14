@@ -8,7 +8,9 @@ export default class Header extends Component {
         return (
             <header>
                  <div>
-                     <img className="logo" src={Logo} alt="Logo Kasa" />
+                     <NavLink to="/" >
+                         <img className="logo" src={Logo} alt="Logo Kasa" />
+                     </NavLink>
                     <ul>
                         <li>
                             <NavLink to="/" exact className={styles.nav_link} activeClassName={styles.active_nav_link}>
