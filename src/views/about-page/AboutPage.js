@@ -17,7 +17,7 @@ export default class AboutPage extends Component {
                     <div className={styles.collapses_container}>
                         {this.state.aboutMessages.map((aboutMessage) => {
                             return (
-                                <Collapse key={aboutMessage.id} accordionWidth={styles.collapse_width} title={aboutMessage.title} content={aboutMessage.description} />
+                                <Collapse key={aboutMessage.id} title={aboutMessage.title} content={aboutMessage.description} />
                             );
                         })}
                     </div>
