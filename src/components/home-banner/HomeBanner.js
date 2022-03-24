@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import banner from "../../assets/home-banner.png";
-import styles from "./HomeBanner.module.scss";
+import React, {Component} from 'react';
+import banner from '../../assets/home-banner.png';
+import styles from './HomeBanner.module.scss';
 
 export default class HomeBanner extends Component {
+    
     render() {
         return (
             <div className={styles.home_banner_contenair}>
@@ -13,4 +14,4 @@ export default class HomeBanner extends Component {
             </div>
         );
     }
-}
+};

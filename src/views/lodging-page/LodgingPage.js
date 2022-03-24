@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 import { Tag, Collapse, Host, Rating, Gallery } from '../../components';
 import { data } from '../../datas/data';
-import styles from "./LodgingPage.module.scss";
-import {Redirect} from "react-router-dom";
+import styles from './LodgingPage.module.scss';
+import {Redirect} from 'react-router-dom';
 
 
 export default class LodgingPage extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
             selectedLodging: this.getSelectedLodging()
         };
-    }
+    };
+
     getSelectedLodging = () => {
         const selectedLodging = data.filter(
             item => item.id === this.props.match.params.id
         )
 
       return selectedLodging[0]
-    }
+    };
+
     render() {
         if (this.props.location.state === undefined)
             return <Redirect to="/not-found" />;
@@ -47,5 +50,5 @@ export default class LodgingPage extends Component {
                 
             </main>
         );
-    }
-}
+    };
+};

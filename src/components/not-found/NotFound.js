@@ -3,6 +3,7 @@ import styles from "./NotFound.module.scss";
 import {NavLink} from "react-router-dom";
 
 export default class NotFound extends Component {
+    
     render() {
         return (
             <main className={styles.NotFound_container}>
@@ -14,4 +15,4 @@ export default class NotFound extends Component {
             </main>
         );
     }
-}
+};

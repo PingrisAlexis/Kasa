@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {AboutBanner, Collapse} from '../../components';
-import styles from "./AboutPage.module.scss";
-import {aboutData} from "../../datas/aboutData";
+import styles from './AboutPage.module.scss';
+import {aboutData} from '../../datas/aboutData';
 
 export default class AboutPage extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -24,4 +25,4 @@ export default class AboutPage extends Component {
                 </main>
         );
     }
-}
+};

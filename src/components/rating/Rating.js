@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import styles from "./Rating.module.scss";
-import { BsStarFill } from 'react-icons/bs'
+import React, {Component} from 'react';
+import styles from './Rating.module.scss';
+import {BsStarFill} from 'react-icons/bs';
 
 export default class Rating extends  Component {
+    
     render() {
         const {rating} = this.props;
         let lodgingRating = rating;
@@ -24,5 +25,5 @@ export default class Rating extends  Component {
             </div>
 
         )
-    }
-}
+    };
+};

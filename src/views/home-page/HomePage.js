@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import { HomeBanner, LodgingCard} from '../../components';
-import styles from "./HomePage.module.scss";
-import {data} from "../../datas/data";
+import React, {Component} from 'react';
+import {HomeBanner, LodgingCard} from '../../components';
+import styles from './HomePage.module.scss';
+import {data} from '../../datas/data';
 
 export default class HomePage extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
             lodgings: data,
         };
-    }
+    };
+    
     render() {
         return (
                 <main>
@@ -27,5 +29,5 @@ export default class HomePage extends Component {
 
                 </main>
         );
-    }
-}
+    };
+};

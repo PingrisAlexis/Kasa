@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import styles from "./LodgingCard.module.scss";
-import { NavLink  } from "react-router-dom";
+import React, {Component} from 'react';
+import styles from './LodgingCard.module.scss';
+import {NavLink} from 'react-router-dom';
 
 export default class LodgingCard extends Component {
+    
     render() {
         const { lodging } = this.props;
         return (
@@ -14,4 +15,4 @@ export default class LodgingCard extends Component {
              </NavLink>
         );
     }
-}
+};

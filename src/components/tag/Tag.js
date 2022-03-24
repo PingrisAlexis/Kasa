@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import styles from "./Tag.module.scss";
+import styles from './Tag.module.scss';
 
 export default class Tag extends  Component {
+
     render() {
         const {tags} = this.props
         return (
@@ -10,5 +11,5 @@ export default class Tag extends  Component {
                  <li key={index}>{elt}</li>)}
              </ul>
         )
-    }
-}
+    };
+};

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from "./Host.module.scss";
 
 export default class Host extends  Component {
+    
     render() {
         const {name, picture} = this.props;
         return (
