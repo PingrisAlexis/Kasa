@@ -1,6 +1,6 @@
-# PingrisAlexis_11_28012022
+# Project 6/9 Front End Developer Path
 
-## Project 11 Front-End OpenClassrooms - Develop a web application with React and React Router.
+## Develop a web application with React and React Router.
 
 ### Specifications:
 
