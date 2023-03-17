@@ -1,4 +1,4 @@
-# Project 6/9 Front End Developer Path
+# Project 6/9 - Front End Developer Path
 
 ## Develop a web application with React and React Router.
 
